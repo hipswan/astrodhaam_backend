@@ -1,16 +1,16 @@
 "use strict";
 let knex = require('../../../../config/knex');
+// let seq_lize = require('../../../../config/sequelize');
 //let common_knex = require('../../../../../config/common_knex');
 
 module.exports = class astrologerModel {
     constructor() { }
 
-    displayAstrologer(){
-let selectAll =knex("dbo.tb_mst_astrologer")
-.select("*");
-        
-        return selectAll;
-
+     displayAstrologer(){
+    
+        return knex.select("*").from("tb_mst_user");
+         
+       
     }
 
 

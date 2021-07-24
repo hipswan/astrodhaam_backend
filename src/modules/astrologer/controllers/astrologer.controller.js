@@ -15,8 +15,8 @@ module.exports = class astrologerController {
 
 
         let result  = astrologerModel.displayAstrologer();
-        
-        res.json(result.json);
+        console.log(result);
+        res.json(await result);
         // let returnResponse = {};
         // let formData = {};
         // formData = astrologerFormatter.addAstrologer(req);
