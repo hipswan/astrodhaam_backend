@@ -16,6 +16,27 @@ module.exports = class astrologerFormatter {
         return data;
     }
 
+    updateAstrologer(req){
+
+        return {
+            AstroId:req.body.AstroId,
+            UserMobileNo: req.body.UserMobileNo,
+            Duration:req.body.Duration,
+            status:req.body.status,
+            CallingType:req.body.CallingType,
+            MOU_ID:req.body.MOU_ID,
+        }
+
+    }
+
+    getAstrologerByID(req){
+
+        return {
+            Id : req.params.id
+        }
+
+    }
+
 
     getClubByID(req) {
         let data = {};

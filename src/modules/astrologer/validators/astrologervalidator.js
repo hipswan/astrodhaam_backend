@@ -11,5 +11,22 @@ module.exports = class astrologerValidator {
         return returnData;
     }
 
+    getAstrologerByID(){
+        let returnData = {
+            Id:['required']
+       }
+
+       return returnData 
+
+    }
+    updateAstrologer(){
+        let returnData = {
+            AstroId:['required']
+       }
+
+       return returnData 
+
+    }
+
 
 }

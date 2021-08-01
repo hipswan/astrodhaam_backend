@@ -4,7 +4,13 @@ let astrologerController = new (require("../controllers/astrologer.controller"))
 
 
 router.get("/add_astrologer",astrologerController.addAstrologer)
-// router.get("/get_club_master", astrologerController.getClubList)
+router.get("/all", astrologerController.getAllAstrologer)
+router.get("/:id", astrologerController.getAstrologerByID)
+router.get("/search", astrologerController.getAllAstrologersFilter)
+router.post("/update/ivr", astrologerController.updateAstrologer)
+
+
+
 // router.get("/get_club_by_id", astrologerController.getClubByID);
 // router.put("/update_status", astrologerController.updateStatus);
 // router.put("/edit_club_master", astrologerController.editClub);
